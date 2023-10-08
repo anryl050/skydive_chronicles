@@ -17,16 +17,19 @@ Acceptance Criteria 1: User Registration and Profile Management
 
  Acceptance Criteria 3: View and Edit Jump Details
  1. If the user navigates to the “Jump History” section, then they can see a list of their logged jumps. 
- 2. If the user selects a jump from the list, then they can view all the details of that specific jump. 3. If the user chooses to edit a jump, then they are directed to the jump editing form. 
+ 2. If the user selects a jump from the list, then they can view all the details of that specific jump. 
+ 3. If the user chooses to edit a jump, then they are directed to the jump editing form. 
  4. If the user confirms changes while editing a jump, then the system updates the jump details in the database. 
  5. If the user opts to delete a jump, then they are prompted to confirm the deletion.
  6. If the user confirms the deletion, then the system removes the jump from their history.
 
  Acceptance Criteria 4: Statistics and Progress Tracking 
- 1. If the user goes to the “Statistics” section, then they can view their jump-related statistics. 2. If the user sets a personal goal, then the system tracks their progress towards that goal. 
+ 1. If the user goes to the “Statistics” section, then they can view their jump-related statistics. 
+ 2. If the user sets a personal goal, then the system tracks their progress towards that goal. 
  3. If the user achieves a set goal, then they receive a notification. 
 
- Acceptance Criteria 5: Equipment Management 1. If the user navigates to the “Equipment” section, then they can manage their skydiving gear. 
+ Acceptance Criteria 5: Equipment Management 
+ 1. If the user navigates to the “Equipment” section, then they can manage their skydiving gear. 
  2. If the user adds or updates equipment information, then the system processes the data and saves it.
  3. If the system detects that equipment is due for maintenance, then it sends a reminder to the user.
 
