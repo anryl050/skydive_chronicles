@@ -73,7 +73,7 @@ export default function Navbar({ fixed }) {
 
                       {/* use Link and use routes to match more closely to App.js */}
                       <Link to="/">
-                      <span className="ml-2 text-white">Home</span>
+                      <span className="ml-2 text-white">Add Jump</span>
                       </Link>
                     </div>
 
@@ -87,7 +87,7 @@ export default function Navbar({ fixed }) {
                       />
                       {/* around span, add Link */}
                       <Link to="/me">
-                        <span className="ml-2 text-white" >{Auth.getProfile().data.firstName}'s Profile</span>
+                        <span className="ml-2 text-white" >{Auth.getProfile().data.firstName}'s Historic Jumps</span>
                       </Link>
                     </div>
 
