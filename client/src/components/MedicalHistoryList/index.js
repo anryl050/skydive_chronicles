@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const MedicalHistoryList = ({ medicalHistorys, title }) => {
   if (!medicalHistorys.length) {
-    return <h3>No MedicalHistorys Yet</h3>;
+    return <h3>No Jumps Yet!</h3>;
   }
 
   return (

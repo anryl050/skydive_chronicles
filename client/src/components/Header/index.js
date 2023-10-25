@@ -5,12 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBars,
   faHome,
+  faUser,
+  faSun,
   faRightToBracket,
   faUserPlus,
-  faCalendarCheck,
   faRightFromBracket,
   faAddressCard,
-  faIdBadge
+  faIdBadge,
 } from '@fortawesome/free-solid-svg-icons'
 
 import Auth from '../../utils/auth';
@@ -61,7 +62,7 @@ export default function Navbar({ fixed }) {
                 {Auth.loggedIn() ? (
                   <>
                     <span  className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-white">Welcome {Auth.getProfile().data.firstName}!</span>
-
+{/* Home Button*/}
                     <div
                       className="cursor-pointer px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
                     >
@@ -76,7 +77,22 @@ export default function Navbar({ fixed }) {
                       <span className="ml-2 text-white">Add Jump</span>
                       </Link>
                     </div>
+{/* Profile Button */}
+                    <div
+                      className="cursor-pointer px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
+                    >
+                      <FontAwesomeIcon
+                        icon={faUser}
+                        color="white"
+                        className=" text-lg leading-lg text-white opacity-75"
+                      />
 
+                      {/* use Link and use routes to match more closely to App.js */}
+                      <Link to="/">
+                      <span className="ml-2 text-white">Profile</span>
+                      </Link>
+                    </div>
+{/* ID Badge */}
                     <div
                       className="cursor-pointer px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
                     >
@@ -95,12 +111,12 @@ export default function Navbar({ fixed }) {
                       className="cursor-pointer px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
                     >
                       <FontAwesomeIcon
-                        icon={faCalendarCheck}
+                        icon={faSun}
                         color="white"
                         className=" text-lg leading-lg text-white opacity-75"
                       />
                       <Link to="/appointment">
-                      <span className="ml-2 text-white" >Appointment</span>
+                      <span className="ml-2 text-white" >Weather</span>
                       </Link>
                     </div>
 
@@ -142,7 +158,7 @@ export default function Navbar({ fixed }) {
                         color="white"
                         className=" text-lg leading-lg text-white opacity-75"
                       />
-                      <span className="ml-2">About Us</span>
+                      <span className="ml-2">About FreeFall</span>
                     </Link>
 
                     {/* login link */}
