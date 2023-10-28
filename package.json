@@ -1,5 +1,5 @@
 {
-  "name": "FreeFall",
+  "name": "Freefall",
   "version": "1.0.0",
   "description": "Skydiving logbook application",
   "main": "server/server.js",
