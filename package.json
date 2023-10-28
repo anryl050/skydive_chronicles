@@ -1,7 +1,7 @@
 {
-  "name": "shifa",
+  "name": "FreeFall",
   "version": "1.0.0",
-  "description": "",
+  "description": "Skydiving logbook application",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
