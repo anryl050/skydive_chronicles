@@ -69,63 +69,16 @@ const Signup = () => {
             <div className="flex items-center w-full max-w-3xl p-8 mx-auto lg:px-12 lg:w-3/5 border">
 
               <div className="w-full">
-                <p className="mt-4 text-gray-500 text-sm">
-                  Let’s get you all set up so you can create your account.
-                </p>
 
                 <div className="mt-6">
 
-                  <h1 className="text-gray-500 text-3xl ">Select type of Registration Account</h1>
+                  <h1 className="text-gray-500 text-3xl ">Sign Up Here</h1>
 
                   {data ? (<p>
                     Success! You may now head <Link to="/">back to the homepage.</Link>                     </p>
                   ) : (
                     <>
-                      <div className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2">
-
-                        <button
-                          className={`flex justify-center w-full px-6 py-3 text-white rounded-lg md:w-auto md:mx-2 focus:outline-none ${isClientRegistration ? 'bg-cyan-500' : 'bg-gray-300'
-                            }`}
-                          onClick={() => toggleRegistration(true)}
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="w-6 h-6"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                            />
-                          </svg>
-                          <span className="mx-2">Patient</span>
-                        </button>
-
-                        <button
-                          className={`flex justify-center w-full px-6 py-3  text-white rounded-lg md:mt-0 md:w-auto md:mx-2  focus:outline-none ${!isClientRegistration ? 'bg-cyan-500' : 'bg-gray-300'
-                            }`}
-                          onClick={() => toggleRegistration(false)}
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="w-6 h-6"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            strokeWidth="2" 
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                            />
-                          </svg>
-                          <span className="mx-2">Doctor</span>
-                        </button>
+                      <div className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2">                   
                       </div>
 
                       <form onSubmit={handleFormSubmit} className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2">
@@ -217,3 +170,8 @@ const Signup = () => {
 
 export default Signup;
 
+
+// old header, don't think we want it anymore
+{/* <p className="mt-4 text-gray-500 text-sm">
+Let’s get you all set up so you can create your account.
+</p> */}

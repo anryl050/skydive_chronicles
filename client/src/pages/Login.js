@@ -71,49 +71,7 @@ const Login = (props) => {
                   <h1 className="text-gray-500 text-3xl ">Please Login to Access Your Account</h1>
                   <>
                     <div className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2">
-                      <button
-                        className={`flex justify-center w-full px-6 py-3 text-white rounded-lg md:w-auto md:mx-2 focus:outline-none ${isClientRegistration ? 'bg-cyan-500' : 'bg-gray-300'
-                          }`}
-                        onClick={() => toggleRegistration(true)}
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="w-6 h-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                          />
-                        </svg>
-                        <span className="mx-2">Patient</span>
-                      </button>
-
-                      <button
-                        className={`flex justify-center w-full px-6 py-3  text-white rounded-lg md:mt-0 md:w-auto md:mx-2  focus:outline-none ${!isClientRegistration ? 'bg-cyan-500' : 'bg-gray-300'
-                          }`}
-                        onClick={() => toggleRegistration(false)}
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="w-6 h-6"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                          />
-                        </svg>
-                        <span className="mx-2">Doctor</span>
-                      </button>
+                     
                     </div>
 
                     <form onSubmit={handleFormSubmit} className="grid grid-cols-1 gap-6 mt-8 md:grid-cols-2">
@@ -176,3 +134,27 @@ const Login = (props) => {
 };
 
 export default Login;
+
+
+// old button for patient (changed to skydiver, but don't really need now)
+//  <button
+// className={`flex justify-center w-full px-6 py-3 text-white rounded-lg md:w-auto md:mx-2 focus:outline-none ${isClientRegistration ? 'bg-cyan-500' : 'bg-gray-300'
+// }`}
+// onClick={() => toggleRegistration(true)}
+// >
+// <svg
+// xmlns="http://www.w3.org/2000/svg"
+// className="w-6 h-6"
+// fill="none"
+// viewBox="0 0 24 24"
+// stroke="currentColor"
+// strokeWidth="2"
+// >
+// <path
+//   strokeLinecap="round"
+//   strokeLinejoin="round"
+//   d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+// />
+// </svg>
+// <span className="mx-2">Skydiver</span>
+// </button>

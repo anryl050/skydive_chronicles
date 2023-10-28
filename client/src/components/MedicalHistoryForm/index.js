@@ -12,7 +12,7 @@ import { QUERY_ME } from '../../utils/queries';
 
 import Auth from '../../utils/auth';
 import formFields from './formFields';
-import symptomChecks from './symptoms';
+import signatureCheck from './symptoms';
 
 const MedicalHistoryForm = () => {
 
@@ -85,8 +85,7 @@ const MedicalHistoryForm = () => {
   // render the page elements
   return (
     <div className='bg-white'>
-      <h3>New Patient Medical History Form</h3>
-
+      <h3>Enter a new Jump!</h3>
 
       <>
 
@@ -94,7 +93,6 @@ const MedicalHistoryForm = () => {
           className="flex-col-2 align-center "
           onSubmit={handleFormSubmit}
         >
-          <p className="mt-8">Patient Information</p>
 
           <div className="grid grid-cols-1 gap-4 mt-4 md:grid-cols-2">
             {formFields.map(({ label, key }) => {
@@ -120,7 +118,7 @@ const MedicalHistoryForm = () => {
           <p className="mt-8">Symptoms</p>
 
           <div className="grid grid-cols-1 gap-2 mt-4 md:grid-cols-3">
-            {symptomChecks.map(({ label, key }) => {
+            {signatureCheck.map(({ label, key }) => {
               return <div key={key} >
                 <input className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-cyan-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                   type="checkbox"
@@ -149,7 +147,7 @@ const MedicalHistoryForm = () => {
 
           <div className="col-12 col-lg-3">
             <button className="btn btn-primary btn-block py-3" type="submit">
-              Add MedicalHistory
+              Add Jump
             </button>
           </div>
           {error && (

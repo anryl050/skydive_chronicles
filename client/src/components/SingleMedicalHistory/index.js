@@ -1,8 +1,8 @@
 import React from 'react';
 import formFields from '../MedicalHistoryForm/formFields';
-import symptomChecks from "../MedicalHistoryForm/symptoms"
-import CommentList from '../CommentList';
-import CommentForm from '../CommentForm';
+import signatureCheck from "../MedicalHistoryForm/symptoms"
+// import CommentList from '../CommentList';
+// import CommentForm from '../CommentForm';
 
 // import { QUERY_SINGLE_MEDICALHIST } from '../../utils/queries';
 
@@ -12,7 +12,7 @@ const SingleMedicalHistory = ({ patient }) => {
   const patientAnswers = { ...patient, ...patient.medicalHistorys[0] };
   delete patientAnswers.medicalHistorys
 
-  const inputs = [...formFields, ...symptomChecks].map(({ key, label }) => {
+  const inputs = [...formFields, ...signatureCheck].map(({ key, label }) => {
     const value = patientAnswers[key] || "";
     return {
       key,
@@ -27,7 +27,7 @@ const SingleMedicalHistory = ({ patient }) => {
     <div className="my-3">
       <h2 className="bg-cyan-500 text-white p-2 m-0 border rounded-md border-solid" style={{ border: '1px dotted #1a1a1a' }}>
         <span style={{ fontSize: '1rem' }}>
-          Medical Information was collected on: {history.createdAt}
+          Jump Info was created on: {history.createdAt}
         </span>
       </h2>
       <div className="bg-slate-100 py-4 border rounded-md border-solid" style={{ border: '1px dotted #1a1a1a' }}>
@@ -66,11 +66,9 @@ const SingleMedicalHistory = ({ patient }) => {
       </div>
 
         <div className="my-10">
-          <CommentList comments={history.comments} />
+          {/* <CommentList comments={history.comments} /> */}
         </div>
-        <div className="bg-cyan-500 text-white p-2 m-0 border rounded-md border-solid text-sm" style={{ border: '1px dotted #1a1a1a' }}>
-          <CommentForm medicalHistoryId={patient._id} />
-        </div>
+        
     </div>
   );
 };

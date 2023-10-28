@@ -1,23 +1,43 @@
 const formFields = [
     {
       key: "firstName",
-      label: "First Name"
+      label: "Jump Number"
     },
     {
       key: "lastName",
-      label: "Last Name"
+      label: "Date"
     },
     {
       key: "gender",
-      label: "Gender"
+      label: "Location"
     },
     {
       key: "age",
-      label: "Age"
+      label: "Aircraft"
     },
     {
       key: "dob",
-      label: "Date Of Birth"
+      label: "Equipment"
+    },
+    {
+      key: "altitude",
+      label: "Altitude"
+    },
+    {
+      key: "freefall",
+      label: "Freefall"
+    },
+    {
+      key: "openingAltitude",
+      label: "Opening Altitude"
+    },
+    {
+      key: "freefallSpeed",
+      label: "Free Fall Speed (mph)"
+    },
+    {
+      key: "underCanopy",
+      label: "Under Canopy"
     }
   ];
 
