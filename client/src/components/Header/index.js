@@ -6,7 +6,9 @@ import {
   faBars,
   faHome,
   faUser,
+  faList,
   faSun,
+  faPlus,
   faRightToBracket,
   faUserPlus,
   faRightFromBracket,
@@ -67,7 +69,7 @@ export default function Navbar({ fixed }) {
                       className="cursor-pointer px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
                     >
                       <FontAwesomeIcon
-                        icon={faHome}
+                        icon={faPlus}
                         color="white"
                         className=" text-lg leading-lg text-white opacity-75"
                       />
@@ -97,12 +99,12 @@ export default function Navbar({ fixed }) {
                       className="cursor-pointer px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug text-white hover:opacity-75"
                     >
                       <FontAwesomeIcon
-                        icon={faIdBadge}
+                        icon={faList}
                         color="white"
                         className=" text-lg leading-lg text-white opacity-75"
                       />
                       {/* around span, add Link */}
-                      <Link to="/me">
+                      <Link to="/">
                         <span className="ml-2 text-white" >{Auth.getProfile().data.firstName}'s Historic Jumps</span>
                       </Link>
                     </div>
@@ -115,7 +117,7 @@ export default function Navbar({ fixed }) {
                         color="white"
                         className=" text-lg leading-lg text-white opacity-75"
                       />
-                      <Link to="/appointment">
+                      <Link to="https://www.windy.com/?47.686,-122.299,5" target='_blank'>
                       <span className="ml-2 text-white" >Weather</span>
                       </Link>
                     </div>
