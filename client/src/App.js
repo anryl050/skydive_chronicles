@@ -13,7 +13,7 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import AboutUs from './pages/AboutUs'
 // import SingleMedicalHistory from '../components/SingleMedicalHistory';
-import Appointment from './pages/Appointment';
+import Weather from './pages/Weather';
 import Profile from './pages/Profile';
 import Profile2 from './pages/Profile2';
 
@@ -87,8 +87,8 @@ function App() {
               />
 
               <Route
-                path="/appointment"
-                element={<Appointment />}
+                path="/weather"
+                element={<Weather />}
               />
                <Route
                 path="/about"
